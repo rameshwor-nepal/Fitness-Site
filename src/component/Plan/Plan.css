@@ -1,0 +1,79 @@
+.plan-container{
+    margin-left: 4rem;
+}
+
+.plan-title{
+    margin-left: 2.5rem;
+    color: white;
+    margin: 15px 0 50px 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.plan-category{ 
+      margin-left: 6rem;
+    display: flex;
+    gap: 30px;
+}
+
+.plan-detail{
+    
+        color: white;
+        background-color: rgb(66, 60, 51);
+        padding: 30px 30px;
+}
+.plan-detail-img{
+    width: 30px;
+    height: 30px;
+}
+.plan-detail-title{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-detail-price{
+    font-size: 62px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.plan-detail-description{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-detail-description img{
+    width: 20px;
+    height:20px;
+}
+
+.plan-detail-description p{
+    font-size: 18px;
+    margin: 5px;
+}
+.see-more{
+    margin-top: 30px;
+}
+.see-more img{
+    margin-left: 20px;
+    height: 13px;
+    width: 20px;
+}
+
+.plan-join-now{
+    margin-top: 25px;
+    padding: 10px 100px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}

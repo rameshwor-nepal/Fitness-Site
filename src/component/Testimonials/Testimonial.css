@@ -1,0 +1,91 @@
+.testimonial-container{
+    display: flex;
+    gap: 6rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: white;
+}
+.testimonial-subtitle{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--orange);
+
+}
+.what-other-say{
+    font-size: 4rem;
+    font-weight: bold;
+    width: 27rem;
+    margin-top: 10px;
+    margin: 15px;
+    margin-left: 0px;
+
+}
+
+.their-saying-content{
+    margin-top: 4rem;
+    font-size: 20px;
+    width: 40rem;
+    letter-spacing: 3px;
+    line-height: 38px;
+}
+
+.changing-arrow{
+    display: flex;
+}
+.who-say{
+    margin-right: 30rem;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.who-say span{
+    letter-spacing: 2px;
+    color: white;
+}
+
+.changing-arrow img{
+    height: 25px;
+    width: 30px;
+    margin: -3px 10px;
+}
+
+.timage{
+    width: 20rem;
+    height: 25rem;
+}
+
+.image-item span{
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--orange);
+    position: absolute;
+    margin: 1rem 1rem;
+    z-index: -1;
+}
+
+.image-item .span2{
+    width: 20rem;
+    height: 25rem;
+    border: 3px solid orange;
+    background-color: none;
+    border-radius: 5px;
+    position: absolute;
+    margin: -1rem -1rem;
+   
+}
+.hr-line{
+    margin-top: 50px;
+    width: 30rem;
+    text-align: left;
+}
+.ready-to-join-heading{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 32rem;
+}

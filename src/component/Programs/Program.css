@@ -1,0 +1,52 @@
+
+.program-div{
+    margin-left: 2rem;
+}
+
+.title{
+    margin-left: 5rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.program-list{
+    display: flex;
+    gap: 2rem;
+}
+
+.program-list-element{
+    padding: 0px 35px;
+    background-color: var(--gray);
+    color: white;
+}
+.program-list-img{
+    padding: 20px 10px 0px 10px;
+    height: 50px;
+    width: 50px;
+}
+.program-list-title{
+    padding: 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.program-list-para{
+    font-size: 16px;
+    width: 17rem;
+
+}
+.program-list-btn{
+    display: flex;
+    gap: 3rem;
+}
+
+.rightarrow{
+    margin-top: 29px;
+    width: 20px;
+    height: 15px;
+}
+.program-list-joinNow{
+    font-size: 22px;
+    font-weight: 400;
+}

@@ -1,0 +1,177 @@
+.container{
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-div{
+    flex: 3;
+}
+.best-fitness-club{
+    margin-top: 5rem;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: var(--caloryCard);
+    color: white;
+    font-weight: 500;
+    padding: 20px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.best-fitness-club div{
+    width: 9.5rem;
+    height: 80%;
+    left: 5px;
+    border-radius: 3rem;
+    background-color: var(--orange);
+    position: absolute;
+    z-index: 1;
+}
+.best-fitness{
+    font-size: 18px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.topic{
+    width: 36rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+.description{
+    margin-top: 2rem;
+    font-size: 20px;
+    color: white;
+    width: 55rem;
+    letter-spacing: 1px;
+}
+
+.members{
+    display: flex;
+    gap: 2rem;
+    color: white; 
+    margin-top: 3rem;   
+}
+
+.member-category span{
+    text-align: center;
+    display: block;
+
+}
+
+.member-number{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.member-title{
+    font-size: 26px;
+    color: var(--lightgray);
+}
+
+.calories-burned{
+    margin-top: -3.2rem;
+    padding: 15px 25px;
+    background-color: var(--caloryCard);
+}
+.calories-burned span{
+    display: block;
+}
+
+.calories-burned .member-number{
+    padding-bottom: 20px;
+}
+
+.hero-button{
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+}
+.get-started-button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    font-size: 24px;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+.learn-more-button{
+    padding: 9px 15px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: var(--orange);
+    font-size: 24px;
+    background: transparent;
+    color: white;
+}
+
+.right-div{
+    flex: 1;
+    background-color: var(--orange);
+    width: fit-content;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.join-now{
+    margin: 20px 30px;
+}
+.join-now-button{
+    position: absolute;
+    left: 15rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    outline: none;
+    color: var(--orange);
+    border: none;
+
+}
+
+.heart-rate{
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    padding: 15px 25px;
+    background-color: var(--caloryCard);
+}
+.heart-rate span{
+    display: block;
+}
+
+.heart-rate .heart-rate-number{
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+.heart-rate-title{
+    font-size: 26px;
+}
+
+.hero-img{
+    position: absolute;
+    height: 45rem;
+    right: 8rem;
+    top: 8rem;
+}
+.hero-back-img{
+    position: absolute;
+    height: 30rem;
+    right: 25rem;
+    top: 5rem;
+    z-index: -1;
+}
