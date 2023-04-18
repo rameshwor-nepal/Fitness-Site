@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Testimonial.css'
 import rightarrow from '../../assets/rightArrow.png'
 import leftarrow from '../../assets/leftArrow.png'
 import tImage from '../../assets/t-image2.jpg'
 
+import {testimonialsData} from '../../data/testimonialsData'
+
 const Testimonial = () => {
+
+    const [selected, setSelected ] = useState(0);
+    const tLength = testimonialsData.length;
   return (
     <section>
     <div className='testimonial-container'>
@@ -18,16 +23,37 @@ const Testimonial = () => {
             </p>
 
             <p className="their-saying-content">
-                This fitness place much helpful where all member are always ready to help and support 
+                {testimonialsData[selected].review}
             </p>
             
             <div className='changing-arrow'>
-                <p className="who-say">Jelvin Pert<span> - Coach</span></p>
+                <p className="who-say">{testimonialsData[selected].name}<span> - {testimonialsData[selected].status}</span></p>
                
-                <img src= {leftarrow} alt="" /> 
-                <img src= {rightarrow} alt="" />
+               <div className='changing-arrow-div'>
 
-            </div>            
+                 <img 
+
+                onClick={() => {
+                selected === 0 ? setSelected (tLength - 1)
+                : setSelected((prev) => prev - 1);
+                }}
+                 
+                src= {leftarrow} alt="" /> 
+                
+                <img
+                
+                onClick={() => {
+                selected === tLength -1 ? setSelected (0)
+                : setSelected((prev) => prev + 1);
+                }}
+
+                src= {rightarrow} alt="" />
+            
+               </div>
+               
+
+            </div> 
+
         </div>
 
 
@@ -37,7 +63,7 @@ const Testimonial = () => {
             <div className="image-item">
                 <span></span>
                 <span className='span2'></span>
-                <img className='timage' src= {tImage} alt="" />
+                <img className='timage' src= {testimonialsData[selected].image} alt="" />
             </div>                         
         </div>
 
@@ -51,11 +77,9 @@ const Testimonial = () => {
                    <span className="stroke-text"> Ready to</span> level up your body <span className="stroke-text">with us?</span> 
                 </div>
 
-                <div className="sent-email">
-                    <div>
-                        <input type="text" />
+                <div className='sent-mail-div'>
+                        <input type="text" placeholder='Enter your email address ' />
                         <button> Join Now</button>
-                    </div>
                 </div>
 
             </div>

@@ -1,0 +1,34 @@
+
+.footer-container{
+    background-color:  rgb(43, 43, 43);
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid orange;
+}
+
+.footer-img{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.social-media-icon{
+    display: flex;
+    gap: 4rem;
+}
+
+.social-media-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo-img{
+    height:200;
+    width: 300px;
+}
+
+.footer-blur{
+        width: 120rem;
+        height: 10rem;
+}

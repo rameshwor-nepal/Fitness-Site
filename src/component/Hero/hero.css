@@ -175,3 +175,10 @@
     top: 5rem;
     z-index: -1;
 }
+
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0px;
+}
+

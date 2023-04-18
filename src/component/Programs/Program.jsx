@@ -1,6 +1,6 @@
 import React from 'react'
 import './Program.css'
-
+import { programsData } from '../../data/programsData'
 import rightarrow from '../../assets/rightArrow.png'
 import dumbell from '../../assets/dumbell.svg'
 
@@ -12,53 +12,22 @@ const Program = () => {
         </h1>
 
         <div className="program-list">
-          <div className="program-list-element">
-             <img className='program-list-img' src= { dumbell } alt="" />
-             <p className='program-list-title'> Strength Training </p>
-             <p className='program-list-para'>
-              Here we will help you to increase your strength and build your body according to your hard work
-             </p>
-             <div className='program-list-btn'>
-               <p className='program-list-joinNow'>Join Now</p>
-               <img className='rightarrow' src= { rightarrow } alt="" /> 
-             </div>
-          </div>
 
-          <div className="program-list-element">
-             <img className='program-list-img' src= { dumbell } alt="" />
-             <h4 className='program-list-title'> Strength Training </h4>
-             <p className='program-list-para'>
-              Here we will help you to increase your strength and build your body according to your hard work
-             </p>
-             <div className='program-list-btn'>
-               <p className='program-list-joinNow'>Join Now</p>
-               <img className='rightarrow' src= { rightarrow } alt="" /> 
-             </div>
-          </div>
+          {programsData.map((program) =>(
+            
+            <div className="program-list-element">
+                  <div className='program-list-img'> { program.image }</div>
+                  <p className='program-list-title'> {program.heading} </p>
+                  <p className='program-list-para'>
+                    { program.details }
+                  </p>
+                  <div className='program-list-btn'>
+                    <p className='program-list-joinNow'>Join Now</p>
+                    <img className='rightarrow' src= { rightarrow } alt="" /> 
+                  </div>
+            </div>
+          ))}
 
-          <div className="program-list-element">
-             <img className='program-list-img' src= { dumbell } alt="" />
-             <h4 className='program-list-title'> Strength Training </h4>
-             <p className='program-list-para'>
-              Here we will help you to increase your strength and build your body according to your hard work
-             </p>
-             <div className='program-list-btn'>
-               <p className='program-list-joinNow'>Join Now</p>
-               <img className='rightarrow' src= { rightarrow } alt="" /> 
-             </div>
-          </div>
-
-          <div className="program-list-element">
-             <img className='program-list-img' src= { dumbell } alt="" />
-             <h4 className='program-list-title'> Strength Training </h4>
-             <p className='program-list-para'>
-              Here we will help you to increase your strength and build your body according to your hard work
-             </p>
-             <div className='program-list-btn'>
-               <p className='program-list-joinNow'>Join Now</p>
-               <img className='rightarrow' src= { rightarrow } alt="" /> 
-             </div>
-          </div>
         </div>
     </div>
   )

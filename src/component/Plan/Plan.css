@@ -11,27 +11,30 @@
     font-weight: bold;
 }
 
-.plan-category{ 
+.plan-category{
+    margin-top: 5rem; 
       margin-left: 6rem;
     display: flex;
     gap: 30px;
 }
 
 .plan-detail{
-    
+    position: relative;
         color: white;
         background-color: rgb(66, 60, 51);
         padding: 30px 30px;
 }
 .plan-detail-img{
-    width: 30px;
-    height: 30px;
+    fill: white;
+    position: absolute;
+    transform: scale(2.5);
+    padding: 1rem 2rem;
 }
 .plan-detail-title{
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 5rem;
     margin-bottom: 10px;
 }
 
@@ -45,18 +48,19 @@
 .plan-detail-description{
     display: flex;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .plan-detail-description img{
+    margin-top: 10px;
     width: 20px;
     height:20px;
 }
 
 .plan-detail-description p{
     font-size: 18px;
-    margin: 5px;
+    margin-top: 10px;
+
 }
 .see-more{
     margin-top: 30px;
@@ -76,4 +80,16 @@
     font-weight: bold;
     outline: none;
     border: none;
+}
+
+.plan-blur2{
+    width: 22rem;
+    height: 30rem;
+    left: 0px;
+}
+
+.plan-blur1{
+    width: 22rem;
+    height: 30rem;
+    right:2rem;
 }

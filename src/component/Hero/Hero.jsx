@@ -3,6 +3,7 @@ import hero_image from '../../assets/hero_image.png'
 import hero_img_back from '../../assets/hero_image_back.png'
 import Header from '../Header/Header'
 import './hero.css'
+import CountUp from 'react-countup';
 
 const hero = () => {
   return (
@@ -10,6 +11,7 @@ const hero = () => {
 
         <div className='left-div'>
             <Header />
+            <div className="blur hero-blur"></div>
 
             <div className='best-fitness-club'>
                 <div></div>
@@ -28,7 +30,7 @@ const hero = () => {
 
               <div className="member-category">
                  <span className='member-number'>
-                      140+
+                      <CountUp end = {140} start = {100} delay = '0' prefix = '+' />
                  </span>
                  <span className='member-title'>
                      Coaching Staffs
@@ -37,7 +39,7 @@ const hero = () => {
 
               <div className="member-category">
                  <span className='member-number'>
-                      140+
+                    <CountUp end = {800} start = {650} delay = '0' prefix = '+' />
                  </span>
                  <span className='member-title'>
                       Joined Member                 
@@ -46,7 +48,7 @@ const hero = () => {
 
               <div className="member-category">
                  <span className='member-number'>
-                      50+
+                    <CountUp end = {200} start = {100} delay = '0' prefix = '+' />
                  </span>
                  <span className='member-title'>
                      Fitness Program
