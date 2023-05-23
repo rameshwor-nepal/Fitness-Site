@@ -21,7 +21,7 @@
 .plan-detail{
     position: relative;
         color: white;
-        background-color: rgb(66, 60, 51);
+        background-color: var(--caloryCard);
         padding: 30px 30px;
 }
 .plan-detail-img{
@@ -92,4 +92,23 @@
     width: 22rem;
     height: 30rem;
     right:2rem;
+}
+
+@media screen and (max-width:900px){
+
+   .plan-container{
+    margin-left: 1rem;
+   }
+
+   .plan-title{
+    font-size: 68px;
+    margin-left: 1rem;
+   }
+
+   .plan-category{
+    margin-left: 3rem;
+    flex-direction: column;
+    width: fit-content;
+
+   }
 }

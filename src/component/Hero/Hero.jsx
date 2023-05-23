@@ -7,7 +7,7 @@ import CountUp from 'react-countup';
 
 const hero = () => {
   return (
-    <div className='container'>
+    <div className='hero-container'>
 
         <div className='left-div'>
             <Header />

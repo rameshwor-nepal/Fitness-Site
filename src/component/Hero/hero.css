@@ -1,4 +1,4 @@
-.container{
+.hero-container{
     margin-left: 2rem;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     margin-top: 5rem;
     border-radius: 20px;
     width: fit-content;
-    background-color: var(--caloryCard);
+    background-color: #533118;
     color: white;
     font-weight: 500;
     padding: 20px 10px;
@@ -182,3 +182,82 @@
     left: 0px;
 }
 
+
+@media screen and (max-width:900px){
+
+    .hero-container{
+      flex-direction: column;
+    }
+  
+    .hero-blur{
+      width:12rem;
+      height: 12rem;
+    }
+    .best-fitness-club{
+      margin-top:50px;
+      font-size: 10px;
+      align-self: center;
+    }
+    .topic{
+      font-size:48px ;
+  }
+
+  .description{
+    font-size: 18px;
+    width: 30rem;
+    margin-top: 12px;
+  }
+
+  .member-number{
+    font-size: 24px;
+  }
+
+  .member-title{
+    font-size: 20px;
+  }
+  .calories-burned {
+    padding: 10px;
+  }
+
+  .right-div{
+    position: relative;
+    background: none;
+  }
+
+  .join-now-button{
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+  }
+
+  .heart-rate{
+   position: absolute;
+   left: 0px;
+   top: 5rem;
+
+  }
+
+  .heart-rate .heart-rate-number{
+    font-size: 24px;
+  }
+  .heart-rate .heart-rate-title{
+    font-size: 20px;
+  }
+
+  .hero-img{
+    position: relative;
+    margin-left: 30px;
+    width: 15rem;
+    height: 20rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+
+  }
+
+  .hero-back-img{
+    left: 2rem;
+    width: 14rem;
+    height: 18rem;
+  }
+}
